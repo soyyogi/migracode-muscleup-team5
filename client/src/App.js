@@ -6,6 +6,8 @@ import ProductsScreen from './components/ProductsScreen'
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import Header from "./Components/Header";
 
 import {
   BrowserRouter as Router,
@@ -14,11 +16,13 @@ import {
   Link
 } from "react-router-dom";
 
-function App() {
+
+function App(props) {
+  
   return (
     <Router>
     <div className="App">
-     
+    <Header/>
       <Switch>
         <Route 
           path='/login'>
@@ -37,6 +41,7 @@ function App() {
         path="/productscreen">
           <ProductScreen/>
         </Route>
+        <Route path="/product/:id" component={ProductScreen}/>
         <Route path="/productsscreen">
         <ProductsScreen/>
         </Route>
