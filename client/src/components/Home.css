@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     background-image: url("https://images.pexels.com/photos/4164843/pexels-photo-4164843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
@@ -7,11 +9,52 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 255, 255);
-    font-size: 100px;
+    
+    font-size: 78px;
     text-shadow: 2px 2px 2px #000000;
     font-family: 'Suez One', serif;
     font-style: italic;
-    text-decoration: overline underline;
+    text-decoration:  underline;
+    transition: 0.6s;
+    color:#c0392b;
+    cursor: pointer;
+}
 
+
+
+.homediv h1{
+color: #ffffff;
+    transition: 0.4s;
+}
+
+
+
+.homediv h1:hover{
+   
+    
+    font-size: 170px;
+    
+}
+
+.und{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    border:none;
+    width:120px;
+    font-size:25px;
+    height:60px;
+    border-radius:5px;
+    -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    transition:0.4s;
+    font-size: 22px;
+}
+
+.und:hover{
+    background-color:rgb(44, 43, 43);
+    
 }

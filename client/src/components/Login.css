@@ -49,7 +49,7 @@ body{
     transition: 0.25s;
     font-size: 20px;
     box-sizing: border-box;
-    cursor: cell;
+    cursor: pointer;
     font-weight: 400;
     text-shadow: none;
 }
@@ -186,6 +186,7 @@ h6 span{
     border:none;
     -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
     box-shadow: 0 0 30px rgb(0, 0, 0);
+    cursor: pointer;
    
 }
 
@@ -211,6 +212,7 @@ h6 span{
     -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
     box-shadow: 0 0 30px rgb(0, 0, 0);
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .signup{
@@ -233,7 +235,7 @@ h6 span{
         transition: 0.25s;
         font-size: 20px;
         box-sizing: border-box;
-        cursor: cell;
+        cursor: pointer;
         font-weight: 400;
         text-shadow: none;
     }

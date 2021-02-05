@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './App.css';
+import ProductScreen from './components/ProductScreen';
+import ProductsScreen from './components/ProductsScreen'
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -27,8 +29,16 @@ function App() {
           <Signup/>
         </Route>
         <Route
-        path='/'>
+        path='/'
+        exact >
         <Home/>  
+        </Route>
+        <Route
+        path="/productscreen">
+          <ProductScreen/>
+        </Route>
+        <Route path="/productsscreen">
+        <ProductsScreen/>
         </Route>
       </Switch>
     

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar'
+import Gymlogo from '../gymlogo.svg'
 import {Link} from 'react-router-dom';
 import './Login.css';
 
@@ -11,7 +12,7 @@ const Login = () => {
                 <div className="forcolor">
         <form className="box" action="index.html" method="POST">
             <div className="hia">
-            <img src="https://brandslogos.com/wp-content/uploads/thumbs/golds-gym-logo-vector.svg" alt="instagram" width="150"></img>
+           <Link to="/"><img src={Gymlogo} alt="instagram" width="150"></img></Link>
             <input type="text" name="" placeholder="Username, or Email"></input>
             <input type="password" name="" placeholder="Password"></input>
             <button className="loginbutton">Login</button>
