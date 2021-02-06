@@ -1,0 +1,130 @@
+[
+    {
+        "_id":1,
+        "category":"Protein",
+        "name":"Whey Isolate Vanilla",
+        "description":"Product Description",
+        "netWeightGrams":1000,
+        "image":"/images/image 01.jpg",
+        "price":149.90,
+        "brand":"Serious Trainer",
+        "rating":4.2,
+        "numReviews":47
+        
+    },
+    {   "_id":2,
+        "category":"Protein",
+        "name":"Lean Catalyst",
+        "description":"Product Description",
+        "netWeightGrams":3500,
+        "image":"/images/image 05.jpg",
+        "price":279.90,
+        "brand":"Mass Builder Co.",
+        "rating":4.9,
+        "numReviews":174
+    },
+    {
+        "_id":3,
+        "category":"Creatine",
+        "name":"Muscle Fuel Booster",
+        "description":"Product Description",
+        "netWeightGrams":500,
+        "image":"/images/image 02.jpg",
+        "price":79.90,
+        "brand":"NY Rocket Suplements",
+        "rating":2.9,
+        "numReviews":59
+
+    },
+    {
+        "_id":4,
+        "category":"Creatine",
+        "name":"Nano Powder-Crek",
+        "description":"Product Description",
+        "netWeightGrams":200,
+        "image":"/images/image 06.jpg",
+        "price":29.90,
+        "brand":"Musk Pure Inc.",
+        "rating":3.8,
+        "numReviews":38
+
+    },
+    {
+        "_id":5,
+        "category":"Carbohydrate",
+        "name":"Universal C-H12",
+        "description":"Product Description",
+        "netWeightGrams":500,
+        "image":"/images/image 11.jpg",
+        "price":39.90,
+        "brand":"Musk Pure Inc.",
+        "rating":4.1,
+        "numReviews":82
+
+    },
+    {
+        "_id":6,
+        "category":"Carbohydrate",
+        "name":"CarboNYzer 2000",
+        "description":"Product Description",
+        "netWeightGrams":2000,        
+        "image":"/images/image 08.jpg",
+        "price":99.90,
+        "brand":"NY Rocket Suplements",
+        "rating":4.5,
+        "numReviews":21
+        
+    },
+    {
+        "_id":7,
+        "category":"Weight Gain",
+        "name":"W-Statement",
+        "description":"Product Description",
+        "netWeightGrams":5000, 
+        "image":"/images/image 04.jpg",
+        "price":199.90,
+        "brand":"Holy Body Builder",
+        "rating":3.4,
+        "numReviews":157
+        
+    },{
+        "_id":8,
+        "category":"Weight Gain",
+        "name":"Road 2Ton",
+        "description":"Product Description",
+        "netWeightGrams":10000, 
+        "image":"/images/image 09.jpg",
+        "price":499.90,
+        "brand":"Holy Body Builder",
+        "rating":3.8,
+        "numReviews":42
+        
+    },{
+        "_id":9,
+        "category":"Energy Bar",
+        "name":"Run Forrest Run",
+        "description":"Product Description",
+        "netWeightGrams":80, 
+        "image":"/images/image 01.jpg",
+        "price":9.90,
+        "brand":"Spedeer",
+        "rating":4.9,
+        "numReviews":89
+        
+    },{
+        "_id":10,
+        "category":"Energy Bar",
+        "name":"Stay Safe",
+        "description":"Product Description",
+        "netWeightGrams":200, 
+        "image":"/images/image 05.jpg",
+        "price":19.90,
+        "brand":"Serious Trainer",
+        "rating":3.8,
+        "numReviews":19
+        
+    }
+ 
+
+]
+
