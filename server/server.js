@@ -48,11 +48,13 @@ app.post("/sign", (req, res) => {
     var email = req.body.email
     var password = req.body.password
 
-    if (name && password && email) {
+    if (name && email.includes("@gmail.com") && password) {
+        req.session.loggedin = true;
         pool.query('INSERT INTO users (name, email, password) VALUES ($1, $2, $3)', [name, email, password])
         res.status(201).send(req.session);
     } else {
-        res.status(400).send('Review your requests body.');
+        req.session.loggedin = false;
+        res.status(201).send(req.session);
     }
 
 })

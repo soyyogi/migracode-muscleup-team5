@@ -1,6 +1,7 @@
 
 import React , {useState} from 'react';
 import './Signup';
+import './Signup.css';
 import Navbar from './Navbar';
 import Gymlogo from '../gymlogo.svg'
 import {Redirect, Route, Link, useHistory } from 'react-router-dom'
@@ -9,7 +10,7 @@ const Signup = () => {
 
     let history = useHistory();
 
-    const [inputList, setInputList] = useState("not logged yet");
+    const [inputList, setInputList] = useState(<h1 id="maybe"> no message </h1>);
 
     const [loginCredentials, setLoginCredentials] = useState({
         name: "",
@@ -46,9 +47,17 @@ const Signup = () => {
     }
 
     function checkLogin(m){
-        console.log(m)
 
-        history.push('/')
+        if (m.loggedin ) {
+            setInputList(<h1> loggeado </h1>);
+
+            setTimeout(function(){ 
+                history.push('/')
+            }, 1000);
+
+        }else{
+            setInputList(<h1> not logged yet </h1>);
+        }
 
     }    
 
@@ -58,7 +67,7 @@ const Signup = () => {
 
         <div className="main">
             <div className="forcolor">
-
+            
             <form className="box" onSubmit={submitForm}>
                 <div className="hia">
                 <Link to="/"><img src={Gymlogo} alt="instagram" width="150"></img></Link>
@@ -68,6 +77,7 @@ const Signup = () => {
                     <input type="password" name="password" value={loginCredentials.password} onChange={handleFunction} placeholder="Password"></input>
 
                     <button className="loginbutton">Signup</button>
+                    {inputList}
                 </div>
 
                 <h6><span>OR</span></h6>
