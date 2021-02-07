@@ -5,6 +5,32 @@ import {Link} from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+
+    function test(){
+        console.log("is this working")
+
+        let book ={
+            BookId:1,
+            Title: "coolBook",
+            Author: "Me"
+        }
+
+        const sendmethod = {
+            method: 'POST', 
+            body: JSON.stringify(book),
+            headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+            }
+        }
+        fetch("http://localhost:5000/auth",sendmethod)
+        .then((res) => res.json())
+        .then((message) => console.log(message))
+    }
+
+
+
+
     return (
         <div>
             <Navbar/>
@@ -25,7 +51,9 @@ const Login = () => {
             <a href="https://instagram.com" className="small">Forgot password?</a>
 
             
-            <p>Don't have an account? <Link to="signup"><a className="signup">Sign up</a></Link></p>
+            <p>Don't have an account? <Link to="signup">
+                <button onClick={test} className="signup">Sign up</ button>
+            </Link></p>
         </div>
         </form>
         
